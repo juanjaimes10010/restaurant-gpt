@@ -1,0 +1,113 @@
+:root {
+  --black: #252525;
+  --white: #fff;
+  --green: green;
+  --red: red;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  border-radius: 0;
+  user-select: none;
+}
+
+html {
+  min-height: 100%;
+  height: 100%;
+  font-size: 0.625rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  max-height: auto;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 3.5rem;
+  padding: .5rem 0;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2.5rem;
+  padding: .5rem 0;
+  margin: .7rem 0;
+}
+
+p,
+a {
+  font-size: 1.5rem;
+}
+
+iframe {
+  height: auto;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  line-height: 0;
+}
+
+.text-center {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.btn {
+  display: block;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+  width: 95%;
+  padding: 15vh 0;
+}
+
+@media(min-width: 32rem) {
+  .container {
+    width: 90%;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex>* {
+  width: 100%;
+}
+
+@media(min-width: 50rem) {
+  .flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .flex>* {
+    width: calc(50% - 1rem);
+  }
+}

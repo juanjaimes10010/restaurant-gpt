@@ -1,0 +1,172 @@
+
+
+/*******************Hero*****************************/
+
+#hero {
+  padding: 3rem 0 0 0;
+  color: #fff;
+  color: var(--white);
+  background-color: #252525;
+  background-color: var(--black);
+}
+
+#hero #hero-content h1 {
+  text-align: center;
+  padding: 0 0 2.5rem 0;
+}
+
+#hero #hero-content #hero-info #hero-cta {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+#hero #hero-content a {
+  margin: .5rem 0;
+  width: 100%;
+  color: #fff;
+  color: var(--white);
+  background-color: green;
+  background-color: var(--green);
+
+}
+
+#hero #hero-content a:last-of-type {
+  background-color: red;
+  background-color: var(--red);
+}
+
+@media(min-width: 35rem) {
+  #hero #hero-content #hero-info #hero-cta {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+
+  #hero #hero-content a {
+    margin: .5rem 0;
+    width: calc(50% - .5rem);
+    color: #fff;
+    color: var(--white);
+    background-color: green;
+    background-color: var(--green);
+  }
+}
+
+@media(min-width: 50rem) {
+  #hero {
+    padding: 12.5rem 0 0 0
+  }
+
+  #hero #hero-content h1 {
+    text-align: left;
+  }
+
+  #hero #hero-content #hero-info #hero-cta {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0 0 0;
+  }
+
+  #hero #hero-content a:last-of-type {
+    display: none;
+  }
+
+}
+
+/***********************about*********************************/
+#about h2 {
+  padding-left: 1rem;
+  border-left: .8rem solid green;
+}
+
+#about h3 {
+  padding-left: 1rem;
+  border-left: .8rem solid red;
+}
+
+#about p {
+  color: grey;
+}
+
+/********************specials*****************************/
+#specials {
+  background-color: lightgrey;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  margin: 1rem 0;
+  padding: 2rem 1rem;
+  background-color: white;
+  text-align: center;
+  outline: 1px solid black;
+}
+
+.card-heading {
+  border-bottom: .1rem dashed lightgrey;
+}
+
+.card-body {
+  padding: 1rem 0 0 0;
+}
+
+.card-body>a {
+  margin: 2rem 0 0 0;
+  color: #fff;
+  color: var(--white);
+  background-color: #252525;
+  background-color: var(--black);
+}
+
+.card-body>a:hover {
+  background-color: lightgrey;
+}
+
+@media(min-width: 45rem) {
+  .cards {
+    flex-direction: row;
+  }
+
+  .card {
+    margin: 0 2rem 0 0;
+  }
+
+  div>.card:last-of-type {
+    margin: 0px;
+  }
+}
+
+/***************************images************************************/
+#gallery {
+  column-count: 1;
+}
+
+#gallery>img {
+  margin: 5px 0;
+  outline: .1rem solid black;
+}
+
+@media(min-width: 50rem) {
+  #gallery {
+    column-count: 2;
+    column-gap: 10px;
+  }
+}
+
+@media(min-width: 62rem) {
+  #gallery {
+    column-count: 4;
+    column-gap: 10px;
+  }
+}
+

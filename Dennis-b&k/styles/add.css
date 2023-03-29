@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: navy;  
+}
+
+form {
+  min-width: 290px;
+  width: 50vw;
+  max-width: 500px;
+  padding: 20px 40px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0px 0px 10px  #1d1d1d;
+}
+
+form > div {
+  padding: 20px 0;
+}
+
+form input, 
+form select {
+  width: 100%;
+  padding: 10px;
+}
+
+form select,
+form input[type="submit"] {
+  cursor: pointer;
+}
+
+form  input[type="submit"] {
+  padding: 20px;
+}
+
+#price {
+  display: flex;
+  align-items: center;
+}
+
+#price > input:last-of-type {
+  width: 30%;
+}
+
+#price input {
+  margin: 0 5px;
+}

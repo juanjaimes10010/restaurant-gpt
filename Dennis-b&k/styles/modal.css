@@ -1,0 +1,40 @@
+.modal-parent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%; 
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgba(25,25,25,.5);
+  z-index: 999;
+}
+
+.modal {
+  position: relative;
+  min-width: 300px;
+  max-width: 80rem;
+  padding: 20px;
+  background-color: white;
+  z-index: 1000;
+}
+
+.modal-close {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+}
